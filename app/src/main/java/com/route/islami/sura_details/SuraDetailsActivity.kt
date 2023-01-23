@@ -3,6 +3,9 @@ package com.route.islami.sura_details
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
+import android.util.Log
+import android.widget.ImageView
 import android.widget.TextView
 import com.route.islami.R
 import java.io.BufferedReader
@@ -14,16 +17,22 @@ class SuraDetailsActivity : AppCompatActivity() {
     var suraContent =""
     lateinit var suraNameTitle : TextView
     lateinit var sura : TextView
+    lateinit var backArrow: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sura_details)
-        val suraName=intent.getStringExtra("fileName")
-        val fileName=intent.getStringExtra("suraName")
+        val suraName=intent.getStringExtra("suraName")
+        val fileName=intent.getStringExtra("fileName")
         suraNameTitle = findViewById(R.id.suraNameTitle)
+       // sura.movementMethod= ScrollingMovementMethod()
+        backArrow = findViewById(R.id.backArrow)
+        backArrow.setOnClickListener{
+            finish()
+        }
         sura= findViewById(R.id.sura)
         suraNameTitle.text = suraName
-        readSuraFile(fileName?:"")
+        readSuraFile("quran/"+fileName?:"")
         sura.text = suraContent
     }
     fun readSuraFile(fileName: String){
@@ -31,9 +40,10 @@ class SuraDetailsActivity : AppCompatActivity() {
             InputStreamReader(assets.open(fileName))
         )
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-            reader.lines().toList().joinToString {
-                suraContent += it
-                return@joinToString ""
+            val lines =reader.lines().toList()
+            for (i in 0 ..lines.size-1){
+                val line = lines.get(i)
+                suraContent += line +" (${i+1}) "
             }
         }
 

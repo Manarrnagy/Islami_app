@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.route.islami.R
 import com.route.islami.adapters.SuraNameAdapter
@@ -35,7 +36,7 @@ class QuraanFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val recyclerView = view.findViewById<RecyclerView>(R.id.suraRV)
-          adapter = SuraNameAdapter(suraNames)
+        adapter = SuraNameAdapter(suraNames)
         adapter.onItemClick = object : SuraNameAdapter.OnItemClick{
             override fun onSuraNameClick(sura: String, postion: Int) {
                 val fileName = "${postion+1}.txt"
