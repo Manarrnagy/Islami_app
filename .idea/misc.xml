@@ -3,12 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
         <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/brown_button.xml" value="0.199" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/gradient_white_card.xml" value="0.1" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.1" />
         <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/ic_play.xml" value="0.1" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/ic_skip_previous.xml" value="0.1" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/icon_selected_color.xml" value="0.1" />
         <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/drawable/oval_button.xml" value="0.199" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/activity_home.xml" value="0.16799999999999998" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/activity_item_sura_name.xml" value="0.22552083333333334" />
         <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
         <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/activity_main_bg.xml" value="0.176" />
-        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/fragment_sebha.xml" value="0.264" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/activity_sura_details.xml" value="0.2" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/fragment_ahadeth.xml" value="0.18697916666666667" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/fragment_quraan.xml" value="0.2" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/fragment_radio.xml" value="0.2" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/layout/fragment_sebha.xml" value="0.176" />
+        <entry key="..\:/Courses/android/android Java/Islami/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24635416666666668" />
       </map>
     </option>
   </component>
