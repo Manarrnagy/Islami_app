@@ -44,16 +44,39 @@
         app:layout_constraintTop_toBottomOf="@id/TableTitle"
         android:background="@color/gold"
         />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/hadethRv"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/tableTitleUnderline"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/activity_hadeth_item_name"/>
+        app:layout_constraintTop_toBottomOf="@id/tableTitleUnderline">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hadethRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/tableTitleUnderline"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/activity_hadeth_item_name"/>
+
+
+
+    </ScrollView>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/hadethRv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tableTitleUnderline"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        tools:listitem="@layout/activity_hadeth_item_name"/>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,6 +29,7 @@ import java.nio.channels.ServerSocketChannel.open
 import kotlin.streams.toList
 import androidx.appcompat.app.AppCompatActivity
 import com.route.islami.Hadeth
+import com.route.islami.HadethDetailsActivity
 import com.route.islami.ReadHadeth
 
 
@@ -54,16 +55,12 @@ class AhadethFragment : Fragment() {
         adapter = HadethNameAdapter(hadethNames)
         readSuraFile("ahadeth.txt")
         adapter.onItemClick = object : HadethNameAdapter.OnItemClick{
-//            override fun onSuraNameClick(sura: String, postion: Int) {
-//                val fileName = "${postion+1}.txt"
-//                val intent = Intent(requireActivity(), SuraDetailsActivity::class.java)
-//                intent.putExtra("fileName","${postion+1}.txt")
-//                intent.putExtra("suraName",sura)
-//                startActivity(intent)
-//            }
 
             override fun onHadethNameClick(hadeth: String, postion: Int) {
-                TODO("Not yet implemented")
+                val intent = Intent(requireActivity(), HadethDetailsActivity::class.java)
+                intent.putExtra("Hadeth",allAhadeth.get(postion).content)
+                intent.putExtra("Title",allAhadeth.get(postion).title)
+                startActivity(intent)
             }
 
         }
