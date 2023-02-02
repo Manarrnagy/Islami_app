@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/suraNameTv"
         android:textSize="25sp"
-        android:text="286"
+        android:text=""
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textAlignment="center"
